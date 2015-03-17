@@ -1,0 +1,265 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#333;
+	font-size: 12px;
+	margin: 0 45px;
+	background-color: #eaeaea;
+}
+
+#contenu-principal
+{
+	position: relative;
+	display: block;
+	/*width: 900px;*/
+	background-color: #fff;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+header, footer, #contenu
+{
+	position: relative;
+	display: block;
+}
+
+#contenu
+{
+	overflow: auto;
+}
+
+/*header
+{
+	background: url('img/antique_library_desk.jpg');
+}*/
+
+footer
+{
+	height: 33px;
+	background-color: #4368A6;
+}
+
+nav
+{
+	position: relative;
+	display: block;
+	background-color: #4368A6;
+	height: 51px;
+}
+
+nav a
+{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 10px;
+	margin-top: 8px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+nav a:hover
+{
+	color: #404041;
+	background-color: #fff;
+}
+
+nav #logo
+{
+	height: 31px;
+	background-color: #fff;
+	color:black;
+	width: 196px;
+	vertical-align: top;
+	margin:0 30px 0 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+#header
+{
+	position: relative;
+	display: block;
+	height: 400px;
+	background: url('../img/antique_library_desk.jpg');
+}
+
+#header > span
+{
+	position: absolute;
+	display: block;
+	background-color: rgba(64,64,65, 0.6);
+	color: #fff;
+	font-size: 42px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 120px;
+}
+.columne-introduction
+{
+	position: relative;
+	display: block;
+	float: left;
+	padding: 30px;
+	background-color: #ddd;
+	/*width: 100%;*/
+
+}
+
+.columne-introduction h1,
+.columne-introduction h2
+{
+	position: relative;
+	display: block;
+	margin: 0 0 10px;
+	font-weight: normal;
+}
+
+.columne-introduction h1
+{
+	font-size: 36px;
+}
+
+.columne-introduction h2
+{
+	display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.columne-introduction p
+{
+	margin: 0 0 25px;
+}
+
+/*.columne-introduction *
+{
+	padding-left: 20px;
+}*/
+
+footer h4
+{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	background-color: #404041;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 8px 35px 9px;
+	margin: 0;
+}
+
+footer span
+{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	padding-left: 60px;
+}
+
+footer span a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer span a:hover, footer div a:hover
+{
+	text-decoration: underline;
+}
+
+footer div
+{
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	height: 33px;
+	background-color: #404041;
+	padding: 0 10px;
+}
+
+footer div a
+{
+	color: white;
+	text-decoration: none;
+	line-height: 2.5;
+	padding-right: 5px;
+}
+
+
+
+
+ul li{
+	background-color: #bbb;
+	/*margin: 20px;*/
+   /* width: 65%;*/
+	float: left;
+	padding: 15px;
+	list-style: none;
+	margin-bottom: 20px;
+}
+/*ul li h2, ul li p{
+	float: left;
+}*/
+ul li img{
+    float: left;
+    margin: 0 20px;
+    width: 20%;
+}
+
+/*formulaire*/
+
+.genres{
+	display: inline-block;
+	float: left;
+}
+
+.datum{
+	background-color: #777;
+	color: white;
+	padding: 5px 10px;
+}
+.article{
+    background-color: #eee;
+    margin: 60px 30px;
+    padding: 20px 20px 10px;
+}
+
+.article p+p{
+	margin-top: 10px;
+}
+
+form{
+	background-color: #ccc;
+    padding: 20px 20px 10px;
+}
+textarea{
+	height: 158px;
+	width: 450px;
+}
+.control-label{
+	float: left;
+    padding-right: 20px;
+}
+.form-group{
+	display: inline-block;
+}
+
+.form-group div{
+	padding-bottom: 10px;
+}
+
+.waot label{
+	float: left;
+    height: 25px;
+    padding-right: 42px;
+}
