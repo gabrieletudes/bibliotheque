@@ -14,7 +14,7 @@ set_include_path(//accede au dossier et cherche dans tout les dossier
     ':' . dirname(__FILE__) . DS . CARBON_DIR
 );
 
-// Mise en place de l’auto-chargement des classes
+// Mise en place de l’auto-chargement des class
 spl_autoload_register(
     function ($class) {
 
