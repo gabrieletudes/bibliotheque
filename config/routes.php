@@ -14,9 +14,12 @@ $routes['editorshow'] = 'editor/show';
 
 $routes['authorindex'] = 'authors/accueil';
 $routes['authorshow'] = 'authors/show';
+$routes['pageauthor'] = 'authors/pageauthor';
+
 
 $routes['genresindex'] = 'genres/accueil';
-$routes['genresshow'] = 'genres/show';
+$routes['genresview'] = 'genres/view';
+
 
 $routes['not_found'] = 'error/e_404';
 $routes['db_error'] = 'error/e_database';
