@@ -30,11 +30,6 @@ header, footer, #contenu
 	overflow: auto;
 }
 
-/*header
-{
-	background: url('img/antique_library_desk.jpg');
-}*/
-
 footer
 {
 	height: 33px;
@@ -72,13 +67,14 @@ nav a:hover
 nav #logo
 {
 	height: 31px;
-	background-color: #fff;
-	color:black;
+	background-color: #2c4459;
+	color:#fff;
 	width: 196px;
 	vertical-align: top;
 	margin:0 30px 0 0;
-	font-size: 24px;
+	font-size: 36px;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 #header
@@ -138,12 +134,8 @@ nav #logo
 .columne-introduction p
 {
 	margin: 0 0 25px;
+	line-height: 1.5;
 }
-
-/*.columne-introduction *
-{
-	padding-left: 20px;
-}*/
 
 footer h4
 {

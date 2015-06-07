@@ -42,11 +42,13 @@ $a = $routeParts[1];
 $m = $routeParts[0];
 // Puis je regarde ce qui est demandé et j’écrase $a et $m si nécessaire
 if (isset($_REQUEST['a']) && isset($_REQUEST['m'])) {//$_REQUEST est = a $_GET ou $_POST ou $_SESSION
+    $a = $_REQUEST['a'];
+    $m = $_REQUEST['m'];
     //vérifier si les deux paramètres ont des valeurs permises, autrement dit, dans l’array des routes permises, il y a quelque chose de la forme 'm/a'
     $route = $_REQUEST['m'] . DS . $_REQUEST['a'];//il va recreer une route sous le meme format que dans routes.php
        // var_dump($route);die();
-    if (in_array($route, $routes)) {//il regarde si elle existe
-        extract($_REQUEST);//recupere $a et $m
+    if (!in_array($route, $routes)) {//il regarde si elle existe
+        die('Tu as oublié la route grosmalin');
     }
 }
 /*

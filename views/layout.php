@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Librery - Cours PHP</title>
+<title>Librerie - Cours PHP</title>
 <meta name="Librery" content="yes">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -11,11 +11,10 @@
 	<div id="contenu-principal">
 		<header>
 			<nav>
-				<a href="#" id="logo">MALIBRERY</a>
-				<a href="<?php echo $_SERVER['PHP_SELF'];  ?>?a=accueil&m=books">Livres</a>
-				<a href="<?php echo $_SERVER['PHP_SELF'];  ?>?a=accueil&m=authors">Auteurs</a>
+				<a href="#" id="logo">MYBIB</a>
+				<a href="<?php echo $_SERVER['PHP_SELF'];  ?>?a=accueil&m=books">Books</a>
+				<a href="<?php echo $_SERVER['PHP_SELF'];  ?>?a=accueil&m=authors">Authors</a>
 				<a href="<?php echo $_SERVER['PHP_SELF'];  ?>?a=accueil&m=genres">Genres</a>
-				<a href="admin.html">Administrateur</a>
 			</nav>
 			<div id="header">
 				<span>Ma Librery</span>

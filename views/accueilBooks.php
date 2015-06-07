@@ -1,13 +1,12 @@
-<?php var_dump($data); ?>
 		<div id="contenu">
 			<div class="columne-introduction">
-				<h1>Livres</h1>
+				<h1>Books</h1>
 				<ul>
 				<?php foreach ($data['books'] as $book): ?>
 					<li><h2><?php echo $book['books_title'] ?></h2>
-					<img src="img/livre.jpg" alt="">
+					<img src="img/<?php echo $book['front_cover'];?>" alt="">
 					<p><?php echo $book['books_summary'] ?></p>
-					<p>Autheur:<a href="autheur.html"><?php echo $book['authors_name'] ?></a>&nbsp; Genre:<a href="genre.html"><?php echo $book['genres_name'] ?></a></p>
+					<p>Author:<a href="<?php echo $_SERVER['PHP_SELF']; ?>?a=pageauthor&m=authors&id=<?php echo $book['author_id'];?>"><?php echo $book['authors_name'] ?></a>&nbsp; Genre:<a href="genre.html"><?php echo $book['genres_name'] ?></a></p>
 					</li>
 				<?php endforeach; ?>
 				</ul>

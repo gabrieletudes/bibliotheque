@@ -3,9 +3,8 @@
 class model
 {
     protected $cx = null;
-    protected $table = '';
 
-    public function __construct($table)
+    public function __construct()
     {
         global $options;
         //Je me connecte au SGBD
@@ -16,7 +15,6 @@ class model
         } catch (PDOException $e) {
             die($e->getMessage());
         }
-        $this->table = $table;
     }
 
 }

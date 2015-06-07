@@ -1,17 +1,12 @@
-<?php var_dump($data); ?>
-<?php
-error_reporting(E_ALL);//gere la maniere dont on reporte les error
-ini_set('display_errors',1);//afficher les error et 1 = a vrais
-?>
 		<div id="contenu">
 			<div class="columne-introduction">
 				<h1>Authors</h1>
 				<ul>
 				<?php foreach ($data['authors'] as $author): ?>
 					<li><h2><?php echo $author['name'] ?></h2>
-					<img src="img/joyce_1926.jpg" alt="">
+					<img src="img/<?php echo $author['photo'];?>" alt="">
 					<p><?php echo $author['bio'] ?></p>
-					<p>Birth Date: <?php echo date("F d, Y", strtotime($author['datebirth'])) ?> &nbsp; Death Date: <?php echo date("F d, Y", strtotime($author['datedeath'])) ?></p>					
+					<p>Birth Date: <?php echo date("F d, Y", strtotime($author['datebirth'])); ?> &nbsp; Death Date: <?php echo date("F d, Y", strtotime($author['datedeath'])); ?></p>					
 					</li>
 				<?php endforeach ?>
 				</ul>
