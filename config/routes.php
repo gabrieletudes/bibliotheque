@@ -18,7 +18,7 @@ $routes['pageauthor'] = 'authors/pageauthor';
 
 
 $routes['genresindex'] = 'genres/accueil';
-$routes['genresview'] = 'genres/viw';
+$routes['genresview'] = 'genres/view';
 
 
 $routes['not_found'] = 'error/e_404';
